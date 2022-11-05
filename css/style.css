@@ -1,0 +1,197 @@
+/*No Specific Form*/
+/*General :
+ *Le style commun entre les pages
+*/
+body{
+    background-color: #f7f8fd;
+    margin: 5% 10%;
+    font-family: 'Jost', sans-serif;
+}
+h1{
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    color : #3a4374;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #647196;
+}
+button{
+    margin : 5px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+}
+.box{
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #f2f4ff;
+    color: #4661e6;
+}
+button:active{
+    background-color: #4661e6;
+    color: #f2f4ff;
+}
+
+/*Index*/
+/*Slidebar*/
+.slidebar{
+    position: absolute;
+}
+.gradient{
+    color : white;
+    background-image: url("../assets/gradient.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Content*/
+.suggestions{
+    position: relative;
+}
+.nav{
+    background-color: #373f68;
+    color : #f2f4ff;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li.suggest{
+    display: inline;
+    float: left;
+    display: block;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+select{
+    border: none;
+    background: none;
+    color: #f2f4ff;
+}
+option{
+    background-color: #373f68;
+}
+button.add{
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #ad1fea;
+    color: #f2f4ff;
+}
+.no-suggestion{
+    text-align: center;
+}
+
+/*Feedback Details*/
+.reply{
+    display: none;
+}
+.text_comment{
+    width: 100%;
+    border-color: #4661e6;
+    border-radius: 5px;
+    background-color: #f7f8fd;
+    color: #647196;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+}
+.feature{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Desktop Form*/
+@media screen and (min-width: 1024px) {
+    /*Index*/
+    .slidebar{
+        width: 260px;
+        padding: 70px 25px 10px;
+        flex-direction: column;
+        margin-left: -70px;
+    }
+    .gradient, .buttons{
+        width: 220px;
+    }
+    .gradient{
+        padding-top: 40px;
+    }
+    .roadmap{
+        padding-right: 140px;
+    }
+    .suggestions{
+        margin : -200px 250px;
+    }
+    
+}
+
+/*Tablet Form*/
+@media screen and (min-width: 768px){
+    /*Index*/
+    .slidebar{
+        align-content: flex-start;
+        display: flex;
+        position: relative;
+        height: 200px;
+    }
+    .gradient, .buttons, .roadmap{
+        margin: 10px 5px;
+    }
+    .buttons{
+        width: 220px;
+    }
+    .roadmap{
+        width: 100px;
+    }
+    .suggestions{
+        align-content: center;
+        width: 620px;
+    }
+}
+
+/*Mobile Form*/
+@media screen and (max-width: 767px){
+    /*Index*/
+    body, html{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons, .roadmap, .number_suggest{
+        display: none;
+    }
+    .gradient{
+        width: 100ch;
+        border-radius: 0px;
+    }
+    .suggestions{
+        margin-top : 100px;
+    }
+    .nav{
+        border-radius: 0px;
+    }
+    .no-suggestion{
+        margin: 10px;
+    }
+
+    /*Feedback Details*/
+    .feedback-details{
+        margin : 5%;
+    }
+    .feature{
+        flex-direction: column-reverse;
+    }
+}

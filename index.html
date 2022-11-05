@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Product feedback app</title>
+</head>
+<body>
+  <div class="slidebar">
+    <div class="box gradient">
+      <h1 style="color:white;">Frontend Mentor</h1>
+      <p style="color:white;">Feedback Board</p>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="box buttons">
+      <button>All</button>
+      <button>UI</button>
+      <button>UX</button>
+      <button>Enhancement</button>
+      <button>Bug</button>
+      <button>Feature</button>
+    </div>
+
+    <div class="box roadmap">
+      <h1>Roadmap</h1>
+      <a>View</a>
+
+      <ul>
+        <li style="color: #f49f85;"><p>Planned</p></li>
+        <li style="color: #ad1fea;"><p>In-Progress</p></li>
+        <li style="color: #62bcfa;"><p>Live</p></li>
+      </ul>
+    </div>
+  
+  </div><!-- Sidebar end -->
+
+  <div class="suggestions">
+    <div class="box nav">
+      <ul>
+        <li class="suggest number_suggest"><img src="assets/home/icon-suggestions.svg"/></li>
+        <li class="suggest number_suggest">Suggestions</li>
+        <li style="color: #647196;"class="suggest">Sort by:
+          <select>         
+            <option>Most upvotes</option>
+            <option>Least upvotes</option>
+            <option>Most comments</option>
+            <option>Least comments</option>
+          </select>
+        </li>
+
+        <li><button style="float:right" class="suggest add">+ Add Feedback</button></li>
+      </ul>
+    </div>
+
+    <!-- No feedback -->
+    <div class="box no-suggestion">
+      <img src="assets/home/illustration-empty.svg"/>
+      <h1>There is no feedback yet.</h1>
+      <p>Got a suggestion? Found a bug that needs to be squashed? We love hearing about new ideas to improve our app.</p>
+
+      <button class="add">+ Add Feedback</button>
+    </div>
+    <!-- No feedback end -->
+  </div>
+</body>
+</html>
